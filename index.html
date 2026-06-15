@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haushalts RPG</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h1>Login / Room</h1>
+  <input id="name" placeholder="Username">
+  <input id="room" placeholder="Room Code">
+  <input id="pass" placeholder="Room Passwort" type="password">
+  <button onclick="joinGame()">Start</button>
+</div>
+
+<div id="game" style="display:none;">
+  <h1>Haushalts RPG</h1>
+
+  <div id="stats"></div>
+
+  <h2>Quests</h2>
+  <div id="quests"></div>
+
+  <h2>Shop</h2>
+  <div id="shop"></div>
+
+  <div id="admin" style="display:none;">
+    <h2>ADMIN</h2>
+    <input id="qtitle" placeholder="Quest">
+    <input id="qxp" placeholder="XP">
+    <input id="qcoins" placeholder="Coins">
+    <button onclick="addQuest()">Add Quest</button>
+  </div>
+</div>
+
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

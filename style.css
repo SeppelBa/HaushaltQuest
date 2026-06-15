@@ -1,2 +1,6 @@
-body{font-family:sans-serif;background:#1b1b1b;color:white;padding:20px}
-button{padding:10px 16px;cursor:pointer}
+body{
+background:#111;
+color:white;
+font-family:monospace;
+}
+input,button{margin:5px;padding:5px;}
